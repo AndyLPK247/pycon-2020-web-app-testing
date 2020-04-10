@@ -3,7 +3,7 @@ This repository contains the companion project for the
 *Hands-On Web App Test Automation* tutorial
 taught by [Andrew "Pandy" Knight](https://twitter.com/AutomationPanda)
 for [PyCon 2020](https://us.pycon.org/2020/).
-During the course, you will build a basic Web UI test automation solution using Python and Selenium WebDriver.
+During the tutorial, you will build a basic Web UI test automation solution using Python and Selenium WebDriver.
 Each section will add a new layer to the solution.
 Follow the instructions in this README to code the solution as you take each section.
 If you get stuck, refer to the example code in this repository for help.
@@ -12,12 +12,12 @@ If you get stuck, refer to the example code in this repository for help.
 
 ## Python Setup
 
-You can complete this course using any OS: Windows, macOS, Linux, etc.
+You can complete this tutorial using any OS: Windows, macOS, Linux, etc.
 
-This course requires Python 3.8 or higher.
+This tutorial requires Python 3.8 or higher.
 You can download the latest Python version from [Python.org](https://www.python.org/downloads/).
 
-This course also requires [pipenv](https://docs.pipenv.org/).
+This tutorial also requires [pipenv](https://docs.pipenv.org/).
 To install pipenv, run `pip install pipenv` from the command line.
 
 You should also have a Python editor/IDE of your choice.
@@ -32,7 +32,7 @@ If you are new to Git, [try learning the basics](https://try.github.io/).
 For Web UI testing, you will need to install the latest versions of
 [Google Chrome](https://www.google.com/chrome/)
 and [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/).
-You can use other browsers with Selenium WebDriver, but the course will use Chrome and Firefox.
+You can use other browsers with Selenium WebDriver, but the tutorial will use Chrome and Firefox.
 
 You will also need to install the latest versions of the WebDriver executables for these browsers: [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) for Chrome
 and [geckodriver](https://github.com/mozilla/geckodriver/releases) for Firefox.
@@ -85,17 +85,17 @@ Use Ctrl-C to kill them.
 
 ## Repository Branching
 
-The `master` branch contains the code for the course's starting point.
+The `master` branch contains the code for the tutorial's starting point.
 The project is basically empty in the `master` branch.
 
-If you want to code along with the course, then create a branch for your work off the `master` branch.
-To create your own branch named `course/develop`, run:
+If you want to code along with the tutorial, then create a branch for your work off the `master` branch.
+To create your own branch named `tutorial/develop`, run:
 
     > git checkout master
-    > git branch course/develop
-    > git checkout course/develop
+    > git branch tutorial/develop
+    > git checkout tutorial/develop
 
-The `example/*` branches contain the completed code for course parts.
+The `example/*` branches contain the completed code for tutorial parts.
 If you get stuck, you can always check the example code.
 
 * `example/1-pytest-setup`
@@ -110,7 +110,7 @@ If you get stuck, you can always check the example code.
 
 (*Note:* The "Bonus Section" does not have any example code.)
 
-# Course Instructions
+# Tutorial Instructions
 
 ## Section 1: Setting Up pytest With Our First Test
 
@@ -123,7 +123,7 @@ Writing a test case first helps us form our thoughts well.
 I like to write my test cases in
 [Gherkin](https://automationpanda.com/2017/01/26/bdd-101-the-gherkin-language/).
 
-In this course, we will automate a test for a basic DuckDuckGo search.
+In this tutorial, we will automate a test for a basic DuckDuckGo search.
 [DuckDuckGo](https://duckduckgo.com/) is a popular search engine that's easy to test.
 Here's our first Web UI test case:
 
@@ -492,7 +492,7 @@ SEARCH_INPUT = (By.ID, 'search_form_input_homepage')
 
 `By` contains property keys for each type of locator.
 We can write locators as tuples of the locator type and the query string.
-(We will use this locator for interaction calls in the next part of the course.)
+(We will use this locator for interaction calls in the next part of the tutorial.)
 
 The full code for `pages/search.py` should now look like this:
 
@@ -1089,11 +1089,11 @@ Check the *Resources* section below for a list.
 To learn more about parallel testing in general, read
 [To Infinity and Beyond: A Guide to Parallel Testing](https://automationpanda.com/2018/01/21/to-infinity-and-beyond-a-guide-to-parallel-testing/).
 
-Congrats! You have completed the guided part of this course!
+Congrats! You have completed the guided part of this tutorial!
 
 ## Bonus Section: Independent Exercises
 
-The guided course covered one very basic search test, but DuckDuckGo has many more features.
+The guided tutorial covered one very basic search test, but DuckDuckGo has many more features.
 Try to write some new tests for DuckDuckGo independently.
 Here are some suggestions:
 
@@ -1145,7 +1145,7 @@ Other helpful resources:
 
 ## About the Author
 
-This course was written and delivered by **Andrew Knight** (aka *Pandy*), the "Automation Panda".
+This tutorial was written and delivered by **Andrew Knight** (aka *Pandy*), the "Automation Panda".
 Pandy is a Pythonista who specializes in testing and automation.
 
 * Twitter: [@AutomationPanda](https://twitter.com/AutomationPanda)
