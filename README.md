@@ -68,7 +68,11 @@ For troubleshooting, see:
 * [Setting the path on macOS](https://www.cyberciti.biz/faq/appleosx-bash-unix-change-set-path-environment-variable/)
 * [Setting the path on Linux](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix)
 
-To verify correct setup on any operating system, simply try to run them from the terminal:
+### Test WebDriver Setup
+
+> **note**: This works on any operating system
+
+To verify if all drivers were correctly set up, simply try to run them from the terminal:
 
 ```bash
 $ ChromeDriver
