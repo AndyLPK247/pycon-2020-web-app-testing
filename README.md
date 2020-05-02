@@ -44,13 +44,17 @@ Older versions might be incompatible with each other.
 ChromeDriver and geckodriver must be installed on the
 [system path](https://en.wikipedia.org/wiki/PATH_(variable)).
 
-To install them on Windows:
+### WebDriver Setup for Windows
+
+To install ChromeDriver and geckodriver on Windows:
 
 1. Create a folder named `C:\Selenium`.
 2. Move the executables into this folder.
 3. Add this folder to the *Path* environment variable. (See [How to Add to Windows PATH Environment Variable](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/).)
 
-To install them on Linux, macOS, and other UNIX variants,
+### WebDriver Setup for *NIX
+
+To install ChromeDriver and geckodriver on Linux, macOS, and other UNIX variants,
 simply move them to the `/usr/local/bin/` directory:
 
 ```bash
@@ -63,6 +67,8 @@ For troubleshooting, see:
 
 * [Setting the path on macOS](https://www.cyberciti.biz/faq/appleosx-bash-unix-change-set-path-environment-variable/)
 * [Setting the path on Linux](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix)
+
+### Test WebDriver Setup
 
 To verify correct setup on any operating system, simply try to run them from the terminal:
 
