@@ -89,6 +89,35 @@ Use Ctrl-C to kill them.
 4. Run `pipenv run python -m pytest` to verify that the framework can run tests.
 5. Create a branch for your code changes. (See *Repository Branching* below.)
 
+### Project Setup Troubleshooting
+
+A few people attempting to set up this project
+encountered the following error when executing `pipenv run python -m pytest`:
+
+```
+ModuleNotFoundError: No module named 'atomicwrites'
+```
+
+I'm not exactly sure why `pipenv install` does not include `atomicwrites`.
+So far, I have seen it happen only on Windows.
+To resolve the error, please attempt the following:
+
+* Upgrade Python to the latest versions. The following worked for me on Windows:
+  * Python 3.8.3 (`python --version`)
+  * pip 20.1 (`pip --version`)
+  * pipenv 2018.11.26 (`pipenv --version`)
+* Run `pipenv update` from within the project directory.
+
+If upgrades don't work, try forcing package installation:
+
+* Run `pipenv install pytest` from within the project directory.
+* Run `pipenv install atomicwrites` from within the project directory.
+
+If these steps don't work in your project, then try to run without pipenv:
+
+* Install Python packages directly using `pip`.
+* Run tests directly using `python -m pytest`.
+
 ## Repository Branching
 
 The `master` branch contains the code for the tutorial's starting point.
