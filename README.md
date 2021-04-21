@@ -8,6 +8,18 @@ Each section will add a new layer to the solution.
 Follow the instructions in this README to code the solution as you take each section.
 If you get stuck, refer to the example code in this repository for help.
 
+## WARNING!
+
+**This project is archived.**
+It was the example code for a one-time workshop, and it will not be actively maintained.
+If you want to learn how to do testing with Python,
+then please check out the following free courses from
+[Test Automation University](https://testautomationu.applitools.com/):
+
+* [Introduction to pytest](https://testautomationu.applitools.com/pytest-tutorial/index.html)
+* [Selenium WebDriver with Python](https://testautomationu.applitools.com/selenium-webdriver-python-tutorial/)
+* [Behavior-Driven Python with pytest-bdd](https://testautomationu.applitools.com/behavior-driven-python-with-pytest-bdd/index.html)
+
 # Setup Instructions
 
 ## Python Setup
